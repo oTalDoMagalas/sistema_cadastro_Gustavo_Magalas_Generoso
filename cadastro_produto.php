@@ -219,7 +219,7 @@ $fornecedores = $conn->query("SELECT id, nome FROM fornecedores");
                     <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['nome']; ?></td>
                     <td><?php echo $row['descricao']; ?></td>
-                    <td><?php echo 'R$ ' . number_format($row['preco'], 2, ',', '.'); ?></td>
+                    <td><?php echo 'R$ ' . number_format($row['preco'], 7, ',', '.'); ?></td>
                     <td><?php echo $row['fornecedor_nome']; ?></td>
                     <td>
                         <?php if ($row['imagem']): ?>
